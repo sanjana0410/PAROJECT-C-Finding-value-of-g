@@ -32,9 +32,9 @@ d10 = 0.23 #Distance between the pivot and COM of mass1
 
 #Times (for large amplitude)
 times = pd.read_excel('Reversible pendulum all data.xlsx', sheet_name="times")
-x2 = times["x2"].dropna(); #x in meters
-T_1_2 = times["t1_2"].dropna(); #t1 in seconds
-T_2_2 = times["t2_2"].dropna(); #t2 in seconds
+x2 = times["xl"].dropna(); #x in meters
+T_1_2 = times["t1_l"].dropna(); #t1 in seconds
+T_2_2 = times["t2_l"].dropna(); #t2 in seconds
 
 l_line = np.linspace(0.15, 0.85, 100)
 
